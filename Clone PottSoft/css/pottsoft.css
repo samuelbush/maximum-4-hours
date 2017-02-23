@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Baloo+Bhaina');
+@import url('https://fonts.googleapis.com/css?family=Anton|Baloo+Bhaina'); /* imports some sweet fonts */
 
 .clear {
 	clear: both;
 }
-
+/* Just unspectecular body things */
 body {
 	margin: 0px;
 	padding: 0px;
@@ -12,86 +12,102 @@ body {
 	background-color: #343A46;
 }
 
-#top-nav-bar-container {
-	background-color: #999CA4;
-	height: 80px;
-	font-weight: normal;
-	margin-bottom: 20px;
+/* Start of the "topside" Navigation Bar */
+
+#top-nav-bar-container { /* speaking to the top-nav-bar-container */
+	background-color: #999CA4; /* setting its background */
+	height: 80px; /* setting its height to 80px */
+	font-weight: normal; /* giving it a normal font weight */
+	margin-bottom: 20px; /* setting the bottom margin to 20px (aestethic reasons) */
 	
 }
 
-#top-nav-bar-container a {
-	text-decoration: none;
-	color: #06143d;
-	font-size: 21px;
-	letter-spacing: 1px;
+#top-nav-bar-container a { /* designing all anchor tags in the top-nav-bar-container */
+	text-decoration: none; /* removing decorations */
+	color: #06143d; /* setting the text color */
+	font-size: 21px; /* setting the font size to 21pixel */
+	letter-spacing: 1px; /* setting the letter spacing to 1pixel */
 }
 
-#logo {
-	float: left;
-	padding: 13 15 0 13;
+#logo { /* speaking to the logo */
+	float: left; /* telling it to float left */
+	padding: 13 15 0 13; /* setting the padding (top,right,bot,left) */
 }
 
-#top-nav-bar-content {
+#top-nav-bar-content { /* speaking to the top-nav-bar-content */
 	float: left;
 	padding: 22 10 22 10;
 }
 
-#top-nav-bar-content:hover, #top-nav-bar-content-kunden:hover{
+#top-nav-bar-content:hover, #top-nav-bar-content-kunden:hover{ 
+/* speaking to top-nav-bar-content and top-nav-bar-content-kunden
+to tell them what they should do when the mouse hovers over them */
 	border-bottom: solid 4px #1C1611;
 }
 
 #top-nav-bar-content:hover a, #top-nav-bar-content-kunden:hover a {
+	/* the same as above but we are speaking to the achor tags now */
 	color: #1C1611;
 }
 
-#top-nav-bar-content-kunden {
-	float: right;
+#top-nav-bar-content-kunden { /* speaking to the top-nav-bar-content-kunden */
+	float: right; /* telling it to float right */
 	padding: 22 10 22 10;
 	
 }
 
-#top-nav-bar-content-kunden img {
-	float: left;
-	width: 40%;
-	margin-left: -30px;
-	margin-top: 3px;
+#top-nav-bar-content-kunden img { /* see above | but now we are speaking to the image */
+	float: left; /* we let the image float right */
+	width: 40%; /* the image now has a width of 40% */
+	margin-left: -30px; /* removing some space on the left side */
+	margin-top: 3px; /* adding some spac on the top side */
 }
 
-#top-nav-bar-content-a {
+#top-nav-bar-content-a { /* talking to top-nav-bar-content-a */
 	float: left;
 	padding: 22 10 22 10;
 }
 
-#top-nav-bar-content-a a{
+#top-nav-bar-content-a a{ /* talking to top-nav-bar-content-a's anchor tag */
 	color: #1C1611 !important;
 }
 
-.active {
-	border-bottom: solid 4px #1C1611;	
-	color: white !important;
+.active { /* talking to everything with the class "active" */
+	border-bottom: solid 4px #1C1611;	/* giving it a border on the bottom side */
+	color: white !important; /* giving it a new color and and !important tag to make sure the color gets set */
 }
 
-#main-content-container {
-	width: 60%;
+/* End of the "topside" Navigation Bar */
+
+
+
+/* Main Content */
+
+#main-content-container { /* speaking to the main-content-container */
+	width: 60%; 
 	margin-left: 20%;
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 0.9); /* using rgba because i want to text to have full opacity */
 	color: #343A46;
 }
 
-#main-content {
-	font-family: arial;
+#main-content { /* speaking to the main-content */
+	font-family: arial; /* setting the font for this container */
 	font-size: 18px;
 	padding: 15;
-	opacity: 1;
+	opacity: 1; /* opacity is 1... not sure why i added it. I'll leave it here. Congrats if you found this! */
 	margin-right: 160px;
 }
 
-#main-content h1 {
+#main-content h1 { /* speaking tp main-content's h1 */
 	font-size: 40px;
 }
 
-#kontakt {
+/* End of Main Content */
+
+
+/* Kontakt */
+
+#kontakt { /* Everything from here should be clear now */
 	margin-top: 25px;
 	height: 100px;
 	float: left;
@@ -121,6 +137,12 @@ a {
 	color: #06143d;
 	
 }
+
+/* End of Kontakt */
+
+
+
+/* first Footer (Bottom of the Page */
 
 #footer-content {
 	padding: 3 0 3 0;
@@ -167,6 +189,10 @@ a {
 	width: 25%;
 }
 
+/* End of first Footer */
+
+/* second Footer */
+
 #footer-2 {
 	padding: 30 0 0 10;
 	float: left;
@@ -186,8 +212,10 @@ a {
 	margin-left: 20px;
 }
 
+/* End of second Footer */
+
 #background {
-	background-image: url("../images/background.jpg");
+	background-image: url("../images/background.jpg"); 
 	height: 90%;
 	margin-top: -200px;
 	width: 100%;
